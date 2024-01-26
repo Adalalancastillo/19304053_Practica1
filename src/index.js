@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-
+// Otro cambio
 const app = express();
 const port = 3000;
 
@@ -13,7 +13,8 @@ let tasks = [
 
 // Get all issues
 app.get('/issues', (req, res) => {
-  res.json(tasks);
+  var issues = [];
+  res.json(issues);
 });
 
 // Get all tasks
